@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Кирилл Кирилл](https://up.htmlacademy.ru/htmlcss/27/user/99380).
-* Наставник: [Лиля Зилюкина](https://htmlacademy.ru/profile/id803445).
+* Наставник: [Александр Горбачев](https://htmlacademy.ru/profile/hrbchv)
 
 ---
 
