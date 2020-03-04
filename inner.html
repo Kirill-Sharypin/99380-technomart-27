@@ -96,31 +96,64 @@
           </section>
               <section>
                 <h2>Фильтр товаров</h2>
-              <!--здесь будет форма -->
+              <form method="post" action="#">
+                  
+                  <label for="price">Цена:</label>
+                  <input type="range" id="price" name="price" min="1" max="30000">
+                  
+                  
+                  </form>
+                  
+                  
+                  <!--здесь будет форма -->
               </section>
     <section>
         <h2>Производители:</h2>
+        <form method="get" action="#">
+            <fieldset>
+            <legend>Производители</legend>
         <ul>
-              <li> BOSCH</li>
-              <li> ИНТЕРСКОЛ</li>
-              <li> MAKITA</li>
-              <li> DEWALT</li>
-              <li> HITACHI</li>
-        </ul>
-    </section>
-          <section>
-              <h2>ПИТАНИЕ:</h2>
-                <ul>
-                  <li>АККУМУЛЯТОРНЫЕ</li>
-                  <li>СЕТЕВЫЕ</li>
+              <li>
+                  <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                  <label for="filter-bosch"> BOSCH</label>
+            </li>
+              <li> 
+                  <input type="checkbox" name="интерскол" id="filter-интерскол">
+                  <label for="filter-интерскол">ИНТЕРСКОЛ</label>
+            </li>
+              <li>
+                  <input type="checkbox"  name="makita" id="filter-makita" checked>
+                <label for="filter-makita">MAKITA</label>
+            </li>
+              <li> 
+                  <input type="checkbox" name="dewalt" id="filter-dewalt">
+                  <label for="filter-dewalt"> DEWALT</label> 
+            </li>
+              <li>
+                  <input type="checkbox" name="hitachi" id="filter-hitachi">
+                    <label for="filter-hitachi">HITACHI</label>
+            </li>
                 </ul>
-          </section>
-          <section>
-              <ul>
+            </fieldset>
+    
+          <fieldset>
+              <legend>ПИТАНИЕ:</legend>
+                <ul>
                   <li>
-                      <button type="button">Показать</button>
-                  </li>
+                      <input type="radio" name="power" value="battery" id="filter-power" checked>
+                      <label for="filter-power">
+                          АККУМУЛЯТОРНЫЕ</label>
+                    </li>
+                  <li>
+                      <input type="radio" name="power" value="network" id="filter-network">
+                      <label for="filter-network"> СЕТЕВЫЕ</label>
+                    </li>
               </ul>
+            </fieldset>
+      <button type="submit">
+          Показать
+            </button>
+        </form>
           </section>
             <section>
               <title>Список перфораторов</title>
@@ -131,7 +164,7 @@
                           <span>Перфоратор BOSCH</span>
                           <span>BFG 3000</span></a>
                     </h3>
-                      <a hraf="#">
+                      <a hrеf="#">
                           <img src="img/bfg30002.jpg" alt="Перфоратор BOSCH BFG 3000"></a>
                       <p>
                         22500Р.
@@ -160,11 +193,18 @@
                         </a>
                       </h3>
                         <a href="#">Купить</a>
+                        <section>
+                            <!-- здесь будет иконка-->
+                        <title>Товар добавлен в корзину</title>
+                            <a href="#">Оформить заказ</a>
+                            <button type="button">Продолжить покупки</button>
                         <a href="#">В закладки</a>
                       <p>
                         <a href="#">12500</a>
                       </p>
-                    </li>
+                    </section>
+                </li>
+                    
                     <li>
                       <h3>
                         <a href="#">
@@ -240,7 +280,8 @@
                              <span>Перфоратор BOSCH</span>
                               <span>BFG 2000</span></a>
                       </h3>
-                      <a href="#"><img src="img/bfg2000.jpg" alt="изображение Перфоратор BOSCH BFG 2000"></a>
+                      <a href="#"><img src="img/bfg2000.jpg" alt="изображение
+                          Перфоратор BOSCH BFG 2000"></a>
                       <p>
                           
                           <a href="#">12500Р.</a>
