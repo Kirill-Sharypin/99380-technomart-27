@@ -1,9 +1,20 @@
-Папка для стилевых файлов.
+body{
+margin:0;
+padding:0;
 
---
+font-family: "Cuprum", sans-serif;
+color: #ffffff;
+background-color: #ffffff;
+}
+a{
+    text-decoration: none;
+}
 
-Пример структуры файлов:
-
-css/
-| - style.css
-| - [другие *.css файлы]
+.header-one{
+    font-size: 17px;
+    line-height: 18px;
+    color:#ffffff;
+    background-color: #293449;
+    
+    
+}
